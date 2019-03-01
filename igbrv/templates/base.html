@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="ru">
+    <head>
+      <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" type="image/x-icon" href="{% static "vendor/media/images/favicon.ico" %}">
+        <title>{% block title %}Главная{% endblock title %}</title>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href={% static "vendor/bootstrap/css/bootstrap.min.css" %}>
+        <!-- Font Awesome core CSS -->
+        <link rel="stylesheet" href={% static "vendor/icons/css/all.min.css" %}>
+        <!-- Custom styles for this template -->
+        <link rel="stylesheet" href={% static "css/simple-sidebar.css" %}>
+        <link rel="stylesheet" href={% static "css/my.css" %}>
+    </head>
+
+    <body>
+        <div id="wrapper" class="toggled">
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href={% url "index" %}><i class="fas fa-home"></i>&nbsp;&nbsp;Главная</a>
+                    </li>
+                    <li style="color: #999999;">
+                        <i class="fas fa-calculator"></i>&nbsp;&nbsp;Расчет
+                        <ul>
+                            <li><a href={% url "calculation-academic" %}><i class="fas fa-graduation-cap"></i>&nbsp;&nbsp;Учебная работа</a></li>
+                            <li><a href={% url "calculation-methodical" %}><i class="fas fa-book"></i>&nbsp;&nbsp;Методическая работа</a></li>
+                            <li><a href={% url "calculation-science" %}><i class="fas fa-flask"></i>&nbsp;&nbsp;Научная деятельность</a></li>
+                            <li><a href={% url "calculation-commander" %}><i class="fas fa-map-marked-alt"></i>&nbsp;&nbsp;Командирская подготовка</a></li>
+                            <li><a href={% url "calculation-other" %}><i class="fas fa-briefcase"></i>&nbsp;&nbsp;Другие виды работ</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href={% url "archive" %}><i class="fas fa-database"></i>&nbsp;&nbsp;Архив</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-info"></i>&nbsp;&nbsp;Справка</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-question"></i>&nbsp;&nbsp;Не придумала</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fal fa-tools"></i>&nbsp;&nbsp;Администрирование</a>
+                    </li>
+                    <li>
+                        <a href={% url "about" %}><i class="far fa-info"></i>&nbsp;&nbsp;О программе</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex justify-content-center">
+                <img src="{% static "vendor/media/images/logo.png" %}" height="40">&nbsp;
+                <i class="d-flex align-items-center" id="name-is">Информационная система "Индивидуальный годовой бюджет рабочего времени"</i>
+            </div>
+            <div id="page-content-wrapper">
+                <div class="container-fluid" id="top-menu">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-4">
+                            <a href="#menu-toggle" class="btn btn-outline-secondary" id="menu-toggle"><i class="fas fa-bars"></i>&nbsp;&nbsp;Главное меню</a>
+                        </div>
+
+                        <div class="col-4 d-flex justify-content-center">
+                            <h4 style="color: #13010461;">{% block name_page %}<i class="fas fa-home"></i>&nbsp;&nbsp;Главная {% endblock name_page %}</h4>
+                        </div>
+                        <div class="col-4 d-flex justify-content-end" style="color: #506154">
+                            <h5><i class="far fa-user-alt"></i>&nbsp;&nbsp;<i>Иванов Иван Иванович</i>&nbsp;&nbsp;<i class="fas fa-sign-in-alt"></i></h5>
+                        </div>
+                    </div>
+                </div>
+                {% block content %}
+
+                {% endblock content %}
+
+                <!--Footer-->
+                <div class="fixed-bottom" id="footer">
+                    <div class="row m-3" style="color: #ced0d6">
+                        <div class="col-4 d-flex justify-content-center ">
+                            <p><i class="far fa-envelope"></i>&nbsp;Email для связи:xxxxxx@rosgvard.ru</p>
+                        </div>
+                        <div class="col-4 d-flex justify-content-center">
+                            <p><img height="20" src="{% static "vendor/media/images/rosgvard_logo_white.png" %}">&nbsp;ПВИ 2019</p>
+                        </div>
+                        <div class="col-4 d-flex justify-content-center">
+                            <p><i class="fa fa-phone" aria-hidden="true"></i>+XXX-XXXX Часы работы: 9:00 - 18:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Script-->
+        <!-- Jquery core JavaScript -->
+        <script src={% static "vendor/jquery/jquery.min.js" %}></script>
+        <!-- Jquery core Popper -->
+        <script src={% static "vendor/bootstrap/js/popper.min.js" %}></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src={% static "vendor/bootstrap/js/bootstrap.bundle.min.js" %}></script>
+        <script src={% static "vendor/bootstrap/js/bootstrap.min.js" %}></script>
+        <!-- Font Awesome core JavaScript -->
+        <script src={% static "vendor/icons/js/all.min.js" %}></script>
+        <!-- Font Awesome core JavaScript -->
+        <script src={% static "js/my.js" %}></script>
+    </body>
+
+</html>

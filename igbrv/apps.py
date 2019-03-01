@@ -2,5 +2,5 @@ from django.apps import AppConfig
 
 
 class CalculationConfig(AppConfig):
-    name = 'calculation'
+    name = 'igbrv'
     verbose_name = "Расчет"
