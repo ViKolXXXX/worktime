@@ -26,7 +26,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'igbrv.apps.CalculationConfig',
+    'igbrv.apps.IgbrvConfig',
 
 ]
 
@@ -68,11 +68,11 @@ WSGI_APPLICATION = 'WorktimeProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'worktimeDb',
-        'USER': 'root',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',
-        'PORT': '',
+        'NAME': 'test-db-2',
+        'USER': 'postgres',
+        'PASSWORD': 'ghjcnjytnfr',
+        'HOST': '192.168.128.251',
+        'PORT': '5433',
     }
 }
 
@@ -112,5 +112,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
-
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/accounts/login/'
 STATIC_URL = '/static/'

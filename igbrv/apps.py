@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class CalculationConfig(AppConfig):
+class IgbrvConfig(AppConfig):
     name = 'igbrv'
-    verbose_name = "Расчет"
+    verbose_name = "ИГБРВ"
