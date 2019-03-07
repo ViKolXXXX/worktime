@@ -1,14 +1,34 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+    <link rel="stylesheet" href={% static "vendor/auth/style.css" %}>
 </head>
 <body>
-<form action="login" method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit">
-</form>
+{#<form action="login" method="post">#}
+{#    {% csrf_token %}#}
+{#    {{ form.as_p }}#}
+{#    <input type="submit">#}
+{#</form>#}
+<!-- Form-->
+<body>
+	<form id="login" method="post" action={% url "login" %}>
+        {% csrf_token %}
+		<h1>Вход</h1>
+		<fieldset id="inputs">
+			<input id="username" placeholder="Логин" autofocus="" required="" type="text">
+			<input id="password" placeholder="Пароль" required="" type="password">
+		</fieldset>
+		<fieldset id="actions">
+			<input id="submit" value="Войти" type="submit">
+			<a href="">Забыли пароль?</a><a href="">Регистрация</a>
+		</fieldset>
+	</form>
 </body>
+
+
+</body>
+
 </html>
