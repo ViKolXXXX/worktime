@@ -22,7 +22,11 @@
                     <li class="sidebar-brand">
                         <a href={% url "index" %}><i class="fas fa-home"></i>&nbsp;&nbsp;Главная</a>
                     </li>
+                    <!--<li>
+                        <a href={% url "calculation" %}><i class="fas fa-calculator"></i>&nbsp;&nbsp;Расчет</a>
+                    </li>-->
                     <li style="color: #999999;">
+
                         <i class="fas fa-calculator"></i>&nbsp;&nbsp;Расчет
                         <ul>
                             <li><a href={% url "calculation-academic" %}><i class="fas fa-graduation-cap"></i>&nbsp;&nbsp;Учебная работа</a></li>
@@ -32,6 +36,7 @@
                             <li><a href={% url "calculation-other" %}><i class="fas fa-briefcase"></i>&nbsp;&nbsp;Другие виды работ</a></li>
                         </ul>
                     </li>
+
                     <li>
                         <a href={% url "archive" %}><i class="fas fa-database"></i>&nbsp;&nbsp;Архив</a>
                     </li>
@@ -65,7 +70,7 @@
                         </div>
                         <div class="col-4 d-flex justify-content-end" style="color: #506154">
                             <h5><i class="far fa-user-alt"></i>&nbsp;&nbsp;<i>{{ user.username }}</i>&nbsp;&nbsp;
-                                <a href={% url 'logout' %} style="color: #415244;" title="Выход из системы"><i class="fas fa-sign-out-alt"></i></a>
+                                <a href={% url 'logout' %} style="color:#415244;" title="Выход из системы"><i class="fas fa-sign-out-alt"></i></a>
                             </h5>
                         </div>
                     </div>
