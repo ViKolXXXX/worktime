@@ -148,12 +148,20 @@ fieldset
     box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
 }
 
-#username
+#id_username
 {
     background-position: 5px -2px !important;
 }
 
-#password
+#id_password
+{
+    background-position: 5px -52px !important;
+}
+#id_password1
+{
+    background-position: 5px -52px !important;
+}
+#id_password2
 {
     background-position: 5px -52px !important;
 }
@@ -238,4 +246,9 @@ fieldset
     float: right;
     line-height: 35px;
     margin-left: 10px;
+}
+
+.error {
+    color: #e50606;
+    text-align: center;
 }
