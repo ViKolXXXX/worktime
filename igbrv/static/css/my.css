@@ -67,3 +67,8 @@ body {
 #footer{
   background-color: #617175; height: 50px;
 }
+
+.form-group.row {
+    border-style: outset ;
+    border-width: 2px;
+}

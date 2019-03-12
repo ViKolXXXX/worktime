@@ -2,8 +2,99 @@
 {% block name_page %}<i class="fas fa-calculator"></i>&nbsp;&nbsp;<i class="fas fa-book"></i>&nbsp;&nbsp;Методическая работа{% endblock name_page %}
 {% block content %}
     <div class="container-fluid my-2">
-        <div class="row d-flex justify-content-center ">
+        <div class="row d-flex justify-content-center">
+            <form method="post" action="">{% csrf_token %}
+                <div class="form-group row">
+                    <label for="Y1" class="col-10 col-form-label col-form-label-sm">1. Разработка программ учебных дисциплин по вновь вводимым учебным дисциплинам и подготовка их к изданию</label>
+                    <div class="col-2  my-1">
+                      <input type="number" class="form-control form-control-sm" id="Y1" placeholder="Ввод часов дисциплины">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Y2" class="col-10 col-form-label col-form-label-sm">2. Переработка программ учебных дисциплин и подготовка их к изданию</label>
+                    <div class="col-2  my-1">
+                      <input type="number" class="form-control form-control-sm" id="Y2" placeholder="Ввод часов дисциплины">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Y4" class="col-10 col-form-label col-form-label-sm">3. Разработка тематических планов изучения учебных дисциплин</label>
+                    <div class="col-2  my-1">
+                      <input type="number" class="form-control form-control-sm" id="Y4" placeholder="Ввод часов дисциплины">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Y6" class="col-10 col-form-label col-form-label-sm">4. Разработка лекций военных (военно-специальных) игр по вновь вводимой дисциплине и подготовка их к изданию</label>
+                    <div class="col-2  my-1">
+                        <input type="number" class="form-control form-control-sm" id="Y6" placeholder="Ввод количества лекций">
+                    </div>
 
+                    <label for="Y8" class="col-10 col-form-label col-form-label-sm">4.1 Тактические и тактико-специальные дисциплины</label>
+                    <div class="col-2 my-1">
+                        <input type="number" class="form-control form-control-sm" id="Y8" placeholder="Ввод количества лекций">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Y10" class="col-10 col-form-label col-form-label-sm">5. Переработка лекций и подготовка их к изданию</label>
+                    <div class="col-2  my-1">
+                      <input type="number" class="form-control form-control-sm" id="Y10" placeholder="Ввод количества лекций">
+                    </div>
+                    <label for="Y12" class="col-10 col-form-label col-form-label-sm">5.1 Тактические и тактико-специальные дисциплины</label>
+                    <div class="col-2  my-1">
+                      <input type="number" class="form-control form-control-sm" id="Y12" placeholder="Ввод количества лекций">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Y14" class="col-10 col-form-label col-form-label-sm">6. Разработка планов для проведения семинаров</label>
+                    <div class="col-2  my-1">
+                      <input type="number" class="form-control form-control-sm" id="Y14" placeholder="Ввод количества планов">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-10 col-form-label col-form-label-sm">7. Разработка и подготовка к изданию учебно-методических материалов (УММ) для проведения занятий по всем видам учебных дисциплин, кроме тактических и тактико-специальных дисциплин (без ЭВМ)</label>
+                    <label for="Y16" class="col-10 col-form-label col-form-label-sm">7.1 Издание</label>
+                    <div class="col-2  my-1">
+                      <input type="number" class="form-control form-control-sm" id="Y16" placeholder="Ввод количества занятий">
+                    </div>
+                    <label for="Y18" class="col-10 col-form-label col-form-label-sm">7.2 Переиздание</label>
+                    <div class="col-2  my-1">
+                      <input type="number" class="form-control form-control-sm" id="Y18" placeholder="Ввод количества занятий">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Y20" class="col-10 col-form-label col-form-label-sm">8. Разработка описаний и подготовка УММ для проведения новых лабораторных работ</label>
+                    <div class="col-2  my-1">
+                      <input type="number" class="form-control form-control-sm" id="Y20" placeholder="Ввод количества ЛР">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Y22" class="col-10 col-form-label col-form-label-sm">9. Переработка описаний и модернизация лабораторных работ</label>
+                    <div class="col-2  my-1">
+                      <input type="number" class="form-control form-control-sm" id="Y22" placeholder="Ввод количества ЛР">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Y26" class="col-10 col-form-label col-form-label-sm">10. Разработка заданий на контрольные работы (по тактико-специальным/по др. учебным дисциплинам)</label>
+                    <div class="col-2  my-1">
+                      <input type="number" class="form-control form-control-sm" id="Y26" placeholder="Ввод количества заданий">
+                    </div>
+                    <label for="Y24" class="col-10 col-form-label col-form-label-sm">10.1 Тактические и тактико-специальные дисциплины</label>
+                    <div class="col-2  my-1">
+                      <input type="number" class="form-control form-control-sm" id="Y24" placeholder="Ввод количества заданий">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Y28" class="col-10 col-form-label col-form-label-sm">11. Разработка методических материалов для выполнения дипломных (курсовых) работ (проектов) макетов учебных дел</label>
+                    <div class="col-2  my-1">
+                      <input type="number" class="form-control form-control-sm" id="Y28" placeholder="Ввод количества заданий">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="Y30" class="col-10 col-form-label col-form-label-sm">12. Разработка для слушателей заочников новых методических указаний по изучению учебной дисциплины (курса) с заданиями и контрольными работами</label>
+                    <div class="col-2  my-1">
+                      <input type="number" class="form-control form-control-sm" id="Y30" placeholder="Ввод часов дисциплины">
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 {% endblock content %}
