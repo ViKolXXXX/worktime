@@ -72,3 +72,34 @@ body {
     border-style: outset ;
     border-width: 2px;
 }
+
+#wrapper .panel_buttom {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    left: 40%;
+
+}
+
+#wrapper.toggled .panel_buttom {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    left:  calc(33% + 250px);
+}
+
+.panel_buttom{
+    position: fixed;
+    bottom: 50px;
+    width: 20%;
+    background-color: #5a585b;
+    border: 4px solid #580404;
+    border-radius: 25px;
+
+
+
+
+
+}
