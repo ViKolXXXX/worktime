@@ -94,12 +94,7 @@ body {
     position: fixed;
     bottom: 50px;
     width: 20%;
-    background-color: #5a585b;
-    border: 4px solid #580404;
-    border-radius: 25px;
-
-
-
-
-
+    background-color: #737174;
+    border: 2px solid #580404;
+    border-radius: 15px;
 }

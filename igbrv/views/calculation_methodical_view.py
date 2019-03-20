@@ -6,3 +6,6 @@ from django.views.generic import TemplateView
 class CalculationMethodicalView(TemplateView):
     def get(self, request, *args, **kwargs):
         return render(request, "calculation-methodical.html")
+
+    def post(self, request):
+        return render(request, "calculation-methodical.html")

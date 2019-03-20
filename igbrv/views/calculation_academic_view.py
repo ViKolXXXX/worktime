@@ -9,3 +9,6 @@ class CalculationAcademicView(TemplateView):
     def get(self, request, *args, **kwargs):
        return render(request, "calculation-academic.html")
 
+    def post(self, request):
+       return render(request, "calculation-academic.html")
+
