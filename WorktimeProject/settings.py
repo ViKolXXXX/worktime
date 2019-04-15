@@ -68,11 +68,11 @@ WSGI_APPLICATION = 'WorktimeProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'test-db-2',
+        'NAME': 'worktimeDb',
         'USER': 'postgres',
         'PASSWORD': 'ghjcnjytnfr',
-        'HOST': '192.168.128.251',
-        'PORT': '5433',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
