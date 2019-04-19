@@ -9,6 +9,7 @@ from igbrv.views.calculation_commander_view import CalculationCommanderView
 from igbrv.views.calculation_methodical_view import CalculationMethodicalView
 from igbrv.views.calculation_other_view import CalculationOtherView
 from igbrv.views.calculation_science_view import CalculationScienceView
+from igbrv.views.calculation_view import CalculationView
 from igbrv.views.index_view import IndexView
 from igbrv.views.report_view import ReportView
 
@@ -17,6 +18,8 @@ urlpatterns = [
     re_path(r'^about$', login_required(AboutView.as_view()), name="about"),
     re_path(r'^report$', login_required(ReportView.as_view()), name="report"),
     re_path(r'^archive$', login_required(ArchiveView.as_view()), name="archive"),
+    re_path(r'^calculation$', login_required(CalculationView.as_view()), name="calculation"),
+
     re_path(r'^calculation-academic$', login_required(CalculationAcademicView.as_view()), name="calculation-academic"),
     re_path(r'^calculation-commander$', login_required(CalculationCommanderView.as_view()), name="calculation-commander"),
     re_path(r'^calculation-methodical$', login_required(CalculationMethodicalView.as_view()), name="calculation-methodical"),
