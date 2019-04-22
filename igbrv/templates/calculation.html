@@ -14,7 +14,7 @@
                         <div class="form-group row mx-2">
                             <label for="X" class="col-10 col-form-label col-form-label-sm">Количество часов</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="X" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="X" min="0" value=0 name="X">
                                 <small id="X" class="form-text text-muted">Ввод количества часов.</small>
                             </div>
                         </div>
@@ -29,7 +29,7 @@
                                 учебных дисциплин по вновь вводимым учебным дисциплинам и подготовка их к
                                 изданию</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y" min="0" value=0 name="Y">
                                 <small id="Y" class="form-text text-muted">Ввод часов дисциплины.</small>
                             </div>
                         </div>
@@ -37,7 +37,7 @@
                             <label for="Y2" class="col-10 col-form-label col-form-label-sm">2. Переработка программ
                                 учебных дисциплин и подготовка их к изданию</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y2" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y2" min="0" value=0 name="Y2">
                                 <small id="Y2" class="form-text text-muted">Ввод часов дисциплины.</small>
                             </div>
                         </div>
@@ -45,7 +45,7 @@
                             <label for="Y4" class="col-10 col-form-label col-form-label-sm">3. Разработка тематических
                                 планов изучения учебных дисциплин</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y4" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y4" min="0" value=0 name="Y4">
                                 <small id="Y4" class="form-text text-muted">Ввод часов дисциплины.</small>
                             </div>
                         </div>
@@ -54,7 +54,7 @@
                                 (военно-специальных) игр по вновь вводимой дисциплине и подготовка их к изданию</label>
                             <div class="col-2  my-1">
                                 <input type="radio" name="Y6-Y8" onchange="trigger_el([Y6.id, Y8.id])" checked>
-                                <input type="number" class="form-control form-control-sm" id="Y6" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y6" min="0" value=0 name="Y6">
                                 <small id="Y6" class="form-text text-muted">Ввод количества лекций.</small>
                             </div>
                             <label for="Y8" class="col-10 col-form-label col-form-label-sm">4.1 Тактические и
@@ -62,7 +62,7 @@
                             <div class="col-2 my-1">
                                 <input type="radio" name="Y6-Y8" value="Y8" onchange="trigger_el([Y8.id, Y6.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y8" min="0" value=0
-                                       disabled>
+                                       disabled name="Y8">
                                 <small id="Y8" class="form-text text-muted">Ввод количества лекций.</small>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                                 подготовка их к изданию</label>
                             <div class="col-2  my-1">
                                 <input type="radio" name="Y10-Y12" onchange="trigger_el([Y10.id, Y12.id])" checked>
-                                <input type="number" class="form-control form-control-sm" id="Y10" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y10" min="0" value=0 name="Y10">
                                 <small id="Y10" class="form-text text-muted">Ввод количества лекций.</small>
                             </div>
                             <label for="Y12" class="col-10 col-form-label col-form-label-sm">5.1 Тактические и
@@ -79,7 +79,7 @@
                             <div class="col-2  my-1">
                                 <input type="radio" name="Y10-Y12" onchange="trigger_el([Y12.id, Y10.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y12" min="0" value=0
-                                       disabled>
+                                       disabled name="Y12">
                                 <small id="Y12" class="form-text text-muted">Ввод количества лекций.</small>
                             </div>
                         </div>
@@ -87,7 +87,7 @@
                             <label for="Y14" class="col-10 col-form-label col-form-label-sm">6. Разработка планов для
                                 проведения семинаров</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y14" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y14" min="0" value=0 name="Y14">
                                 <small id="Y14" class="form-text text-muted">Ввод количества планов.</small>
                             </div>
                         </div>
@@ -97,15 +97,15 @@
                                 дисциплин, кроме тактических и тактико-специальных дисциплин (без ЭВМ)</label>
                             <label for="Y16" class="col-10 col-form-label col-form-label-sm">7.1 Издание</label>
                             <div class="col-2  my-1">
-                                <input type="radio" name="Y16-Y18" onchange="trigger_el([Y16.id, Y18.id])" checked>
-                                <input type="number" class="form-control form-control-sm" id="Y16" min="0" value=0>
+                                <input type="radio" name="Y16-Y18" onchange="trigger_el([Y16.id, Y18.id])" checked >
+                                <input type="number" class="form-control form-control-sm" id="Y16" min="0" value=0 name="Y16">
                                 <small id="Y16" class="form-text text-muted">Ввод количества занятий.</small>
                             </div>
                             <label for="Y18" class="col-10 col-form-label col-form-label-sm">7.2 Переиздание</label>
                             <div class="col-2  my-1">
                                 <input type="radio" name="Y16-Y18" onchange="trigger_el([Y18.id, Y16.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y18" min="0" value=0
-                                       disabled>
+                                       disabled name="Y18">
                                 <small id="Y18" class="form-text text-muted">Ввод количества занятий.</small>
                             </div>
                         </div>
@@ -113,7 +113,7 @@
                             <label for="Y20" class="col-10 col-form-label col-form-label-sm">8. Разработка описаний и
                                 подготовка УММ для проведения новых лабораторных работ</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y20" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y20" min="0" value=0 name="Y20">
                                 <small id="Y20" class="form-text text-muted">Ввод количества ЛР.</small>
                             </div>
                         </div>
@@ -121,7 +121,7 @@
                             <label for="Y22" class="col-10 col-form-label col-form-label-sm">9. Переработка описаний и
                                 модернизация лабораторных работ</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y22" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y22" min="0" value=0 name="Y22">
                                 <small id="Y22" class="form-text text-muted">Ввод количества ЛР.</small>
                             </div>
                         </div>
@@ -130,7 +130,7 @@
                                 контрольные работы (по тактико-специальным/по др. учебным дисциплинам)</label>
                             <div class="col-2  my-1">
                                 <input type="radio" name="Y26-Y24" onchange="trigger_el([Y26.id, Y24.id])" checked>
-                                <input type="number" class="form-control form-control-sm" id="Y26" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y26" min="0" value=0 name="Y26">
                                 <small id="Y26" class="form-text text-muted">Ввод количества заданий.</small>
                             </div>
                             <label for="Y24" class="col-10 col-form-label col-form-label-sm">10.1 Тактические и
@@ -138,7 +138,7 @@
                             <div class="col-2  my-1">
                                 <input type="radio" name="Y26-Y24" onchange="trigger_el([Y24.id, Y26.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y24" min="0" value=0
-                                       disabled>
+                                       disabled name="Y24">
                                 <small id="Y24" class="form-text text-muted">Ввод количества заданий.</small>
                             </div>
                         </div>
@@ -147,7 +147,7 @@
                                 материалов для выполнения дипломных (курсовых) работ (проектов) макетов учебных
                                 дел</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y28" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y28" min="0" value=0 name="Y28">
                                 <small id="Y28" class="form-text text-muted">Ввод количества заданий.</small>
                             </div>
                         </div>
@@ -156,7 +156,7 @@
                                 слушателей заочников новых методических указаний по изучению учебной дисциплины (курса)
                                 с заданиями и контрольными работами</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y30" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y30" min="0" value=0 name="Y30">
                                 <small id="Y30" class="form-text text-muted">Ввод часов дисциплины.</small>
                             </div>
                         </div>
@@ -165,7 +165,7 @@
                                 слушателей заочников новых методических указаний по изучению учебной дисциплины (курса)
                                 с заданиями и контрольными работами</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y32" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y32" min="0" value=0 name="32">
                                 <small id="Y32" class="form-text text-muted">Ввод фактических затрат времени.</small>
                             </div>
                         </div>
@@ -177,7 +177,7 @@
                             <div class="col-2  my-1">
                                 <input type="radio" name="Y33-Y35-Y37-Y39-Y40"
                                        onchange="trigger_el([Y33.id, Y35.id, Y37.id, Y39.id, Y40.id])" checked>
-                                <input type="number" class="form-control form-control-sm" id="Y33" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y33" min="0" value=0 name="Y33">
                                 <small id="Y33" class="form-text text-muted">Ввод количества частей.</small>
                             </div>
                             <label for="Y35" class="col-10 col-form-label col-form-label-sm">14.2 Литературный сценарий
@@ -186,7 +186,7 @@
                                 <input type="radio" name="Y33-Y35-Y37-Y39-Y40"
                                        onchange="trigger_el([Y35.id, Y33.id, Y37.id, Y39.id, Y40.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y35" min="0" value=0
-                                       disabled>
+                                       disabled name="Y35">
                                 <small id="Y35" class="form-text text-muted">Ввод количества кинофрагментов.</small>
                             </div>
                             <label for="Y37" class="col-10 col-form-label col-form-label-sm">14.3 Кинопланы диафильмов и
@@ -195,7 +195,7 @@
                                 <input type="radio" name="Y33-Y35-Y37-Y39-Y40"
                                        onchange="trigger_el([Y37.id, Y35.id, Y33.id, Y39.id, Y40.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y37" min="0" value=0
-                                       disabled>
+                                       disabled name="Y37">
                                 <small id="Y37" class="form-text text-muted">Ввод количества диафильмов.</small>
                             </div>
                             <label for="Y39" class="col-10 col-form-label col-form-label-sm">14.4 Диапособия и другие
@@ -204,7 +204,7 @@
                                 <input type="radio" name="Y33-Y35-Y37-Y39-Y40"
                                        onchange="trigger_el([Y39.id, Y35.id, Y37.id, Y33.id, Y40.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y39" min="0" value=0
-                                       disabled>
+                                       disabled name="Y39">
                                 <small id="Y39" class="form-text text-muted">Ввод фактических затрат времени.</small>
                             </div>
                             <label for="Y40" class="col-10 col-form-label col-form-label-sm">14.5 Слайдов в программах
@@ -213,7 +213,7 @@
                                 <input type="radio" name="Y33-Y35-Y37-Y39-Y40"
                                        onchange="trigger_el([Y40.id, Y35.id, Y37.id, Y39.id, Y33.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y40" min="0" value=0
-                                       disabled>
+                                       disabled name="Y40">
                                 <small id="Y40" class="form-text text-muted">Ввод количества слайдов.</small>
                             </div>
                         </div>
@@ -221,7 +221,7 @@
                             <label for="Y42" class="col-10 col-form-label col-form-label-sm">15. Разработка УММ для
                                 проведения всех видов учебных занятий (с использованием ЭВМ)</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y42" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y42" min="0" value=0 name="Y42">
                                 <small id="Y42" class="form-text text-muted">Ввод количества занятий.</small>
                             </div>
                         </div>
@@ -229,7 +229,7 @@
                             <label for="Y44" class="col-10 col-form-label col-form-label-sm">16. Переработка и
                                 подготовка к изданию УММ для проведения занятий с использованием ЭВМ</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y44" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y44" min="0" value=0 name="Y44">
                                 <small id="Y44" class="form-text text-muted">Ввод количества занятий.</small>
                             </div>
                         </div>
@@ -238,7 +238,7 @@
                                 для приема вступительных экзаменов от кандидатов поступающих в военно-учебные
                                 заведения </label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y46" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y46" min="0" value=0 name="Y46">
                                 <small id="Y46" class="form-text text-muted">Ввод количества комплектов.</small>
                             </div>
                         </div>
@@ -246,7 +246,7 @@
                             <label for="Y48" class="col-10 col-form-label col-form-label-sm">18. Разработка материалов
                                 для приема экзаменов (зачетов) от курсантов </label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y48" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y48" min="0" value=0 name="Y48">
                                 <small id="Y48" class="form-text text-muted">Ввод часов дисциплины.</small>
                             </div>
                         </div>
@@ -254,7 +254,7 @@
                             <label for="Y50" class="col-10 col-form-label col-form-label-sm">19. Разработка учебных
                                 наглядных пособий (плакатов, схем, стендов, макетов) </label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y50" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y50" min="0" value=0 name="Y50">
                                 <small id="Y50" class="form-text text-muted">Ввод фактических затрат времени.</small>
                             </div>
                         </div>
@@ -262,7 +262,7 @@
                             <label for="Y51" class="col-10 col-form-label col-form-label-sm">20. Создание и
                                 совершенствование учебно-материальной базы </label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y51" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y51" min="0" value=0 name="Y51">
                                 <small id="Y51" class="form-text text-muted">Ввод фактических затрат времени.</small>
                             </div>
                         </div>
@@ -273,7 +273,7 @@
                                 лекция</label>
                             <div class="col-2  my-1">
                                 <input type="radio" name="Y52-Y522" onchange="trigger_el([Y52.id, Y522.id])" checked>
-                                <input type="number" class="form-control form-control-sm" id="Y52" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y52" min="0" value=0 name="Y52">
                                 <small id="Y52" class="form-text text-muted">Ввод часов лекций.</small>
                             </div>
                             <label for="Y522" class="col-10 col-form-label col-form-label-sm">21.2 Ранее читаемая
@@ -281,7 +281,7 @@
                             <div class="col-2  my-1">
                                 <input type="radio" name="Y52-Y522" onchange="trigger_el([Y522.id, Y52.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y522" min="0" value=0
-                                       disabled>
+                                       disabled name="Y522">
                                 <small id="Y522" class="form-text text-muted">Ввод часов лекций.</small>
                             </div>
                         </div>
@@ -295,7 +295,7 @@
                             <div class="col-2  my-1">
                                 <input type="radio" name="Y54-Y56-Y58-Y60"
                                        onchange="trigger_el([Y54.id, Y56.id, Y58.id, Y60.id])" checked>
-                                <input type="number" class="form-control form-control-sm" id="Y54" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y54" min="0" value=0 name="Y54">
                                 <small id="Y54" class="form-text text-muted">Ввод часов занятий.</small>
                             </div>
                             <label for="Y56" class="col-10 col-form-label col-form-label-sm">22.2 Вновь вводимое занятие
@@ -304,7 +304,7 @@
                                 <input type="radio" name="Y54-Y56-Y58-Y60"
                                        onchange="trigger_el([Y56.id, Y54.id, Y58.id, Y60.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y56" min="0" value=0
-                                       disabled>
+                                       disabled name="Y56">
                                 <small id="Y56" class="form-text text-muted">Ввод часов занятий.</small>
                             </div>
                             <label for="Y58" class="col-10 col-form-label col-form-label-sm">22.3 Ранее отрабатываемое
@@ -313,7 +313,7 @@
                                 <input type="radio" name="Y54-Y56-Y58-Y60"
                                        onchange="trigger_el([Y58.id, Y56.id, Y54.id, Y60.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y58" min="0" value=0
-                                       disabled>
+                                       disabled name="Y58">
                                 <small id="Y58" class="form-text text-muted">Ввод часов занятий.</small>
                             </div>
                             <label for="Y60" class="col-10 col-form-label col-form-label-sm">22.4 Ранее отрабатываемое
@@ -322,7 +322,7 @@
                                 <input type="radio" name="Y54-Y56-Y58-Y60"
                                        onchange="trigger_el([Y60.id, Y56.id, Y58.id, Y54.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y60" min="0" value=0
-                                       disabled>
+                                       disabled name="Y60">
                                 <small id="Y60" class="form-text text-muted">Ввод часов занятий.</small>
                             </div>
                         </div>
@@ -335,7 +335,7 @@
                             <div class="col-2  my-1">
                                 <input type="radio" name="Y62-Y64-Y66" onchange="trigger_el([Y62.id, Y64.id, Y66.id])"
                                        checked>
-                                <input type="number" class="form-control form-control-sm" id="Y62" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y62" min="0" value=0 name="Y62">
                                 <small id="Y62" class="form-text text-muted">Ввод часов занятий.</small>
                             </div>
                             <label for="Y64" class="col-10 col-form-label col-form-label-sm">23.2 Тематика: полк
@@ -343,7 +343,7 @@
                             <div class="col-2  my-1">
                                 <input type="radio" name="Y62-Y64-Y66" onchange="trigger_el([Y64.id, Y62.id, Y66.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y64" min="0" value=0
-                                       disabled>
+                                       disabled name="Y64">
                                 <small id="Y64" class="form-text text-muted">Ввод часов занятий.</small>
                             </div>
                             <label for="Y66" class="col-10 col-form-label col-form-label-sm">23.3 Тематика:
@@ -351,7 +351,7 @@
                             <div class="col-2  my-1">
                                 <input type="radio" name="Y62-Y64-Y66" onchange="trigger_el([Y66.id, Y64.id, Y62.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y66" min="0" value=0
-                                       disabled>
+                                       disabled name="Y66">
                                 <small id="Y66" class="form-text text-muted">Ввод часов занятий.</small>
                             </div>
                         </div>
@@ -362,7 +362,7 @@
                                 занятия</label>
                             <div class="col-2  my-1">
                                 <input type="radio" name="Y68-Y70" onchange="trigger_el([Y68.id, Y70.id])" checked>
-                                <input type="number" class="form-control form-control-sm" id="Y68" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y68" min="0" value=0 name="Y68">
                                 <small id="Y68" class="form-text text-muted">Ввод часов занятий.</small>
                             </div>
                             <label for="Y70" class="col-10 col-form-label col-form-label-sm">24.2 Ранее проводимые
@@ -370,7 +370,7 @@
                             <div class="col-2  my-1">
                                 <input type="radio" name="Y68-Y70" onchange="trigger_el([Y70.id, Y68.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y70" min="0" value=0
-                                       disabled>
+                                       disabled name="Y70">
                                 <small id="Y70" class="form-text text-muted">Ввод часов занятий.</small>
                             </div>
                         </div>
@@ -383,7 +383,7 @@
                             <div class="col-2  my-1">
                                 <input type="radio" name="Y72"
                                        onchange="trigger_el([Y721.id, Y722.id, Y723.id, Y724.id])" checked>
-                                <input type="number" class="form-control form-control-sm" id="Y721" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y721" min="0" value=0 name="Y721">
                                 <small id="Y721" class="form-text text-muted">Ввод количества контролируемых
                                     преподавателей.
                                 </small>
@@ -394,7 +394,7 @@
                                 <input type="radio" name="Y72"
                                        onchange="trigger_el([Y722.id, Y721.id, Y723.id, Y724.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y722" min="0" value=0
-                                       disabled>
+                                       disabled name="Y722">
                                 <small id="Y722" class="form-text text-muted">Ввод количества контролируемых
                                     преподавателей.
                                 </small>
@@ -405,7 +405,7 @@
                                 <input type="radio" name="Y72"
                                        onchange="trigger_el([Y723.id, Y722.id, Y721.id, Y724.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y723" min="0" value=0
-                                       disabled>
+                                       disabled name="Y723">
                                 <small id="Y723" class="form-text text-muted">Ввод количества контролируемых
                                     преподавателей.
                                 </small>
@@ -416,7 +416,7 @@
                                 <input type="radio" name="Y72"
                                        onchange="trigger_el([Y724.id, Y722.id, Y723.id, Y721.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y724" min="0" value=0
-                                       disabled>
+                                       disabled name="Y724">
                                 <small id="Y724" class="form-text text-muted">Ввод количества контролируемых
                                     преподавателей.
                                 </small>
@@ -428,7 +428,7 @@
                                 заседаниях и заседаниях кафедры, предметно-методических комиссий,показных и пробных
                                 занятиях </label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y75" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y75" min="0" value=0 name="Y75">
                                 <small id="Y75" class="form-text text-muted">Ввод фактических затрат времени.</small>
                             </div>
                         </div>
@@ -436,7 +436,7 @@
                             <label for="Y76" class="col-10 col-form-label col-form-label-sm">27. Участие в заседаниях
                                 методических комиссий военно-учебного заведения </label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y76" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y76" min="0" value=0 name="Y76">
                                 <small id="Y76" class="form-text text-muted">Ввод фактических затрат времени.</small>
                             </div>
                         </div>
@@ -445,7 +445,7 @@
                                 профессорско-преподавательского состава на курсах повышения квалификации, стажировка в
                                 войсках (в том числе находящихся в районах вооруженных конфликтов)</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y77" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y77" min="0" value=0 name="Y77">
                                 <small id="Y77" class="form-text text-muted">Ввод фактических затрат времени.</small>
                             </div>
                         </div>
@@ -453,7 +453,7 @@
                             <label for="Y78" class="col-10 col-form-label col-form-label-sm">29. Командировки, связанные
                                 с выполнением методической работы</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y78" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y78" min="0" value=0 name="Y78">
                                 <small id="Y78" class="form-text text-muted">Ввод дней командировки.</small>
                             </div>
                         </div>
@@ -462,7 +462,7 @@
                                 профессорско-преподавательского состава во внутривузовской системе повышения
                                 квалификации </label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y80" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y80" min="0" value=0 name="Y80">
                                 <small id="Y80" class="form-text text-muted">Ввод фактических затрат времени.</small>
                             </div>
                         </div>
@@ -470,7 +470,7 @@
                             <label for="Y81" class="col-10 col-form-label col-form-label-sm">31. Разработка методических
                                 указаний по написанию рефератов, курсовых работ, дипломных работ (проектов)</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y81" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y81" min="0" value=0 name="Y81">
                                 <small id="Y81" class="form-text text-muted">Ввод количества авторских листов.</small>
                             </div>
                         </div>
@@ -478,7 +478,7 @@
                             <label for="Y83" class="col-10 col-form-label col-form-label-sm">32. Разработка тематики
                                 (перечня тем) рефератов, курсовых работ(проектов), дипломных проектов (работ)</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y83" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y83" min="0" value=0 name="Y83">
                                 <small id="Y83" class="form-text text-muted">Ввод количества единиц методического
                                     материала.
                                 </small>
@@ -488,7 +488,7 @@
                             <label for="Y85" class="col-10 col-form-label col-form-label-sm">33. Разработка программы по
                                 войсковой стажировке, производственной и другим видам практик </label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y85" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y85" min="0" value=0 name="Y85">
                                 <small id="Y85" class="form-text text-muted">Ввод количества единиц методического
                                     материала.
                                 </small>
@@ -507,7 +507,7 @@
                             <div class="col-2  my-1">
                                 <input type="radio" name="Y87-Y89-Y91-Y93-Y95"
                                        onchange="trigger_el([Y87.id, Y89.id, Y91.id, Y93.id, Y95.id])" checked>
-                                <input type="number" class="form-control form-control-sm" id="Y87" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y87" min="0" value=0 name="Y87">
                                 <small id="Y87" class="form-text text-muted">Ввод часов занятий.</small>
                             </div>
                             <label for="Y89" class="col-10 col-form-label col-form-label-sm">34.1.2 Тематика: батальон
@@ -516,7 +516,7 @@
                                 <input type="radio" name="Y87-Y89-Y91-Y93-Y95"
                                        onchange="trigger_el([Y89.id, Y87.id, Y91.id, Y93.id, Y95.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y89" min="0" value=0
-                                       disabled>
+                                       disabled name="Y89">
                                 <small id="Y89" class="form-text text-muted">Ввод часов занятий.</small>
                             </div>
                             <label for="Y91" class="col-10 col-form-label col-form-label-sm">34.1.3 Тематика: полк
@@ -525,7 +525,7 @@
                                 <input type="radio" name="Y87-Y89-Y91-Y93-Y95"
                                        onchange="trigger_el([Y91.id, Y89.id, Y87.id, Y93.id, Y95.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y91" min="0" value=0
-                                       disabled>
+                                       disabled name="Y91">
                                 <small id="Y91" class="form-text text-muted">Ввод часов занятий.</small>
                             </div>
                             <label for="Y93" class="col-10 col-form-label col-form-label-sm">34.1.4 Тематика:
@@ -534,7 +534,7 @@
                                 <input type="radio" name="Y87-Y89-Y91-Y93-Y95"
                                        onchange="trigger_el([Y93.id, Y89.id, Y91.id, Y87.id, Y95.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y93" min="0" value=0
-                                       disabled>
+                                       disabled name="Y93">
                                 <small id="Y93" class="form-text text-muted">Ввод часов занятий.</small>
                             </div>
                             <label for="Y95" class="col-10 col-form-label col-form-label-sm">34.1.5
@@ -543,14 +543,14 @@
                                 <input type="radio" name="Y87-Y89-Y91-Y93-Y95"
                                        onchange="trigger_el([Y95.id, Y89.id, Y91.id, Y93.id, Y87.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y95" min="0" value=0
-                                       disabled>
+                                       disabled name="Y95">
                                 <small id="Y95" class="form-text text-muted">Ввод часов занятий.</small>
                             </div>
                             <label for="Y97" class="col-10 col-form-label col-form-label-sm">34.2 Разработка обучающих и
                                 контролирующих программ для проведения занятий с использованием вычислительной
                                 техники</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y97" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y97" min="0" value=0 name="Y97">
                                 <small id="Y97" class="form-text text-muted">Ввод количества единиц методического
                                     материала.
                                 </small>
@@ -563,7 +563,7 @@
                                 материалов, указанных в пункте 34 Приказа МВД России от 01.11.2005 N 880</label>
                             <div class="col-2  my-1">
                                 <input type="radio" name="Y99-Y100" onchange="trigger_el([Y99.id, Y100.id])" checked>
-                                <input type="number" class="form-control form-control-sm" id="Y99" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y99" min="0" value=0 name="Y99">
                                 <small id="Y99" class="form-text text-muted">Ввод фактических затрат времени.</small>
                             </div>
                             <label for="Y100" class="col-10 col-form-label col-form-label-sm">35.2 Переработка обучающих
@@ -572,7 +572,7 @@
                             <div class="col-2  my-1">
                                 <input type="radio" name="Y99-Y100" onchange="trigger_el([Y100.id, Y99.id])">
                                 <input type="number" class="form-control form-control-sm" id="Y100" min="0" value=0
-                                       disabled>
+                                       disabled name="Y100">
                                 <small id="Y100" class="form-text text-muted">Ввод фактических затрат времени.</small>
                             </div>
                         </div>
@@ -580,7 +580,7 @@
                             <label for="Y101" class="col-10 col-form-label col-form-label-sm">36. Разработка материалов
                                 для приема экзаменов(зачетов) с использованием ЭВМ </label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Y101" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Y101" min="0" value=0 name="Y101">
                                 <small id="Y101" class="form-text text-muted">Ввод количества комплектов.</small>
                             </div>
                         </div>
@@ -594,7 +594,7 @@
                             <label for="Z" class="col-10 col-form-label col-form-label-sm">1. Выполнение плановых
                                 научных, научно-исследовательских опытно-конструкторских работ</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Z" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Z" min="0" value=0 name="Z">
                                 <small id="Z" class="form-text text-muted">Ввод фактических затрат времени.</small>
                             </div>
                         </div>
@@ -603,7 +603,7 @@
                                 научных трудов, монографий, научных статей; подготовка докладов и научных сообщений на
                                 научных конференциях, научных совещаниях, семинарах и симпозиумах</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Z1" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Z1" min="0" value=0  name="Z1">
                                 <small id="Z1" class="form-text text-muted">Ввод количества авторских листов.</small>
                             </div>
                         </div>
@@ -614,14 +614,14 @@
                                 впервые</label>
                             <div class="col-2  my-1">
                                 <input type="radio" name="Z3-Z5" onchange="trigger_el([Z3.id, Z5.id])" checked>
-                                <input type="number" class="form-control form-control-sm" id="Z3" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Z3" min="0" value=0  name="Z3">
                                 <small id="Z3" class="form-text text-muted">Ввод количества авторских листов.</small>
                             </div>
                             <label for="Z5" class="col-10 col-form-label col-form-label-sm">3.2 Переиздание</label>
                             <div class="col-2 my-1">
                                 <input type="radio" name="Z3-Z5" value="Z5" onchange="trigger_el([Z5.id, Z3.id])">
                                 <input type="number" class="form-control form-control-sm" id="Z5" min="0" value=0
-                                       disabled>
+                                       disabled name="Z5">
                                 <small id="Z5" class="form-text text-muted">Ввод количества авторских листов.</small>
                             </div>
                         </div>
@@ -632,14 +632,14 @@
                                 впервые</label>
                             <div class="col-2  my-1">
                                 <input type="radio" name="Z7-Z9" onchange="trigger_el([Z7.id, Z9.id])" checked>
-                                <input type="number" class="form-control form-control-sm" id="Z7" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Z7" min="0" value=0 name="Z7">
                                 <small id="Z7" class="form-text text-muted">Ввод количества авторских листов.</small>
                             </div>
                             <label for="Z9" class="col-10 col-form-label col-form-label-sm">4.2 Переиздание</label>
                             <div class="col-2 my-1">
                                 <input type="radio" name="Z7-Z9" value="Z9" onchange="trigger_el([Z9.id, Z7.id])">
                                 <input type="number" class="form-control form-control-sm" id="Z9" min="0" value=0
-                                       disabled>
+                                       disabled name="Z9">
                                 <small id="Z9" class="form-text text-muted">Ввод количества авторских листов.</small>
                             </div>
                         </div>
@@ -647,7 +647,7 @@
                             <label for="Z11" class="col-10 col-form-label col-form-label-sm">5. Разработка и подготовка
                                 к изданию программированных учебных пособий </label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Z11" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Z11" min="0" value=0 name="Z11">
                                 <small id="Z11" class="form-text text-muted">Ввод количества авторских листов.</small>
                             </div>
                         </div>
@@ -656,7 +656,7 @@
                                 к изданию педагогических сценариев и алгоритмов функционирования автоматизированных
                                 обучающих систем </label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Z13" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Z13" min="0" value=0 name="Z13">
                                 <small id="Z13" class="form-text text-muted">Ввод фактических затрат времени.</small>
                             </div>
                         </div>
@@ -665,7 +665,7 @@
                                 уставов, наставлений, положений, руководств, инструкций и других документов </label>
                             <div class="col-2  my-1">
                                 <input type="number" class="form-control form-control-sm" id="Z14" min="0" max="100"
-                                       value=0>
+                                       value=0 name="Z14">
                                 <small id="Z14" class="form-text text-muted">Ввод фактических затрат времени.</small>
                             </div>
                         </div>
@@ -674,7 +674,7 @@
                                 исследовательских учениях, в работе комиссий по приемке научных работ, испытаниях и
                                 приемке нового вооружения, военной техники и учебно-тренировочных средств </label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Z15" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Z15" min="0" value=0 name="Z15">
                                 <small id="Z15" class="form-text text-muted">Ввод фактических затрат времени.</small>
                             </div>
                         </div>
@@ -682,7 +682,7 @@
                             <label for="Z16" class="col-10 col-form-label col-form-label-sm">9. Участие в научных
                                 (теоретических) конференциях, научных совещаниях, семенарах и симпозиумах </label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Z16" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Z16" min="0" value=0 name="Z16">
                                 <small id="Z16" class="form-text text-muted">Ввод фактических затрат времени.</small>
                             </div>
                         </div>
@@ -691,7 +691,7 @@
                                 научных конференций, научных совещаний семинаров, симпозиумов, опытных и
                                 исследовательских учений </label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Z17" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Z17" min="0" value=0 name="Z17">
                                 <small id="Z17" class="form-text text-muted">Ввод количества авторских листов.</small>
                             </div>
                         </div>
@@ -700,7 +700,7 @@
                                 ученого совета военно-учебного заведения (факультета) и диссертационных советов </label>
                             <div class="col-2  my-1">
                                 <input type="number" class="form-control form-control-sm" id="Z19" min="0" max="60"
-                                       value=0>
+                                       value=0 name="Z19">
                                 <small id="Z19" class="form-text text-muted">Ввод фактических затрат времени.</small>
                             </div>
                         </div>
@@ -710,7 +710,7 @@
                                 профессорско-преподавательским составом в военно-учебных заведениях </label>
                             <div class="col-2  my-1">
                                 <input type="number" class="form-control form-control-sm" id="Z20" min="0" max="20"
-                                       value=0>
+                                       value=0 name="Z20">
                                 <small id="Z20" class="form-text text-muted">Ввод фактических затрат времени.</small>
                             </div>
                         </div>
@@ -719,7 +719,7 @@
                                 конкурсных комиссий по рассмотрению научных работ слушателей и курсантов </label>
                             <div class="col-2  my-1">
                                 <input type="number" class="form-control form-control-sm" id="Z21" min="0" max="20"
-                                       value=0>
+                                       value=0 name="Z21">
                                 <small id="Z21" class="form-text text-muted">Ввод фактических затрат времени.</small>
                             </div>
                         </div>
@@ -730,7 +730,7 @@
                                 рефератов</label>
                             <div class="col-2  my-1">
                                 <input type="radio" name="Z22-Z24" onchange="trigger_el([Z22.id, Z24.id])" checked>
-                                <input type="number" class="form-control form-control-sm" id="Z22" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Z22" min="0" value=0 name="Z22">
                                 <small id="Z22" class="form-text text-muted">Ввод количества членов военно-научного
                                     совета.
                                 </small>
@@ -740,7 +740,7 @@
                             <div class="col-2 my-1">
                                 <input type="radio" name="Z22-Z24" onchange="trigger_el([Z24.id, Z22.id])">
                                 <input type="number" class="form-control form-control-sm" id="Z24" min="0" value=0
-                                       disabled>
+                                       disabled name="Z24">
                                 <small id="Z24" class="form-text text-muted">Ввод количества авторских листов.</small>
                             </div>
                         </div>
@@ -748,7 +748,7 @@
                             <label for="Z26" class="col-10 col-form-label col-form-label-sm">15. Проведение научных
                                 консультаций с докторантами </label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Z26" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Z26" min="0" value=0 name="Z26">
                                 <small id="Z26" class="form-text text-muted">Ввод количества докторантов.</small>
                             </div>
                         </div>
@@ -757,7 +757,7 @@
                                 трудов и научно-исследовательских работ, диссертаций, учебников, учебных пособий,
                                 монографий, конкурсных материалов </label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Z28" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Z28" min="0" value=0 name="Z28">
                                 <small id="Z28" class="form-text text-muted">Ввод количества авторских листов.</small>
                             </div>
                         </div>
@@ -765,7 +765,7 @@
                             <label for="Z30" class="col-10 col-form-label col-form-label-sm">17. Редактирование научных
                                 трудов, учебников, учебных пособий</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Z30" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Z30" min="0" value=0 name="Z30">
                                 <small id="Z30" class="form-text text-muted">Ввод количества авторских листов.</small>
                             </div>
                         </div>
@@ -773,7 +773,7 @@
                             <label for="Z32" class="col-10 col-form-label col-form-label-sm">18. Командировки, связанные
                                 с выполнением научной работы</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Z32" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Z32" min="0" value=0 name="Z32">
                                 <small id="Z32" class="form-text text-muted">Ввод количества дней командировки.</small>
                             </div>
                         </div>
@@ -781,9 +781,9 @@
                             <label class="col-10 col-form-label col-form-label-sm">19. Участие в изобретательской и
                                 рационализаторской работе </label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Z34" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Z34" min="0" value=0 name="Z34">
                                 <small id="Z34" class="form-text text-muted">Ввод количества заявок.</small>
-                                <input type="number" class="form-control form-control-sm" id="Z35" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Z35" min="0" value=0 name="Z35">
                                 <small id="Z35" class="form-text text-muted">Ввод фактических затрат времени.</small>
                             </div>
                         </div>
@@ -791,7 +791,7 @@
                             <label for="Z37" class="col-10 col-form-label col-form-label-sm">20. Научное руководство
                                 соискателями, прикрепленными приказом начальника военно-учебного заведения </label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="Z37" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="Z37" min="0" value=0 name="Z37">
                                 <small id="Z37" class="form-text text-muted">Ввод количества соискателей.</small>
                             </div>
                         </div>
@@ -805,7 +805,7 @@
                             <label for="F1" class="col-10 col-form-label col-form-label-sm">1. Занятия по командирской
                                 подготовке</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="F1" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="F1" min="0" value=0 name="F1">
                                 <small id="F1" class="form-text text-muted">Ввод количества часов.</small>
                             </div>
                         </div>
@@ -813,7 +813,7 @@
                             <label for="F2" class="col-10 col-form-label col-form-label-sm">2. Общие мероприятия
                                 (смотры, совещания, информирование и т.п)</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="F2" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="F2" min="0" value=0 name="F2">
                                 <small id="F2" class="form-text text-muted">Ввод количества часов.</small>
                             </div>
                         </div>
@@ -821,7 +821,7 @@
                             <label for="F3" class="col-10 col-form-label col-form-label-sm">3. Выполнение индивидуальных
                                 заданий </label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="F3" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="F3" min="0" value=0 name="F3">
                                 <small id="F3" class="form-text text-muted">Ввод количества часов.</small>
                             </div>
                         </div>
@@ -829,7 +829,7 @@
                             <label for="F4" class="col-10 col-form-label col-form-label-sm">4. Самостоятельная
                                 работа</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="F4" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="F4" min="0" value=0 name="F4">
                                 <small id="F4" class="form-text text-muted">Ввод количества часов.</small>
                             </div>
                         </div>
@@ -837,7 +837,7 @@
                             <label for="F5" class="col-10 col-form-label col-form-label-sm">5. Физическая
                                 подготовка</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="F5" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="F5" min="0" value=0 name="F5">
                                 <small id="F5" class="form-text text-muted">Ввод количества часов.</small>
                             </div>
                         </div>
@@ -845,7 +845,7 @@
                             <label for="F6" class="col-10 col-form-label col-form-label-sm">6. Повышение
                                 квалификации</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="F6" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="F6" min="0" value=0 name="F6">
                                 <small id="F6" class="form-text text-muted">Ввод количества часов.</small>
                             </div>
                         </div>
@@ -859,7 +859,7 @@
                             <label for="G1" class="col-10 col-form-label col-form-label-sm">1. Несение службы в
                                 наряде</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="G1" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="G1" min="0" value=0 name="G1">
                                 <small id="G1" class="form-text text-muted">Ввод количества часов.</small>
                             </div>
                         </div>
@@ -867,7 +867,7 @@
                             <label for="G2" class="col-10 col-form-label col-form-label-sm">2. Воспитательная работа с
                                 курсантами</label>
                             <div class="col-2  my-1">
-                                <input type="number" class="form-control form-control-sm" id="G2" min="0" value=0>
+                                <input type="number" class="form-control form-control-sm" id="G2" min="0" value=0 name="G2">
                                 <small id="G2" class="form-text text-muted">Ввод количества часов.</small>
                             </div>
                         </div>
