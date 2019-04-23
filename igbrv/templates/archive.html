@@ -3,21 +3,40 @@
 {% block content %}
     <div class="container-fluid my-2" >
         <div class="row d-flex justify-content-center" style="margin-bottom: 60px">
-            <div class="col-8">
-                <h6>Записи</h6>
+            <div class="col-10">
+                <h6>Ваша нагрузка</h6>
                 <table class="table table-bordered">
                     <thead>
-                    <tr>
-                        <th scope="col">№ п/п</th>
-                        <th scope="col">Дата</th>
+                    <tr style="text-align: center">
+                        <th scope="col">Дата создания нагрузки</th>
+                        <th scope="col">Учебная нагрузка</th>
+                        <th scope="col">Методическая нагрузка</th>
+                        <th scope="col">Научная нагрузка</th>
+                        <th scope="col">Командирская подготовка</th>
+                        <th scope="col">Другие виды работ</th>
+                        <th scope="col">Общая сумма</th>
+                        <th scope="col"></th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>01.01.0000</td>
+                        {% for load in loads %}
+                            <tr style="text-align: center;">
+                                <td >{{ load.date_creation }}</td>
+                                <td >{{ load.x }}</td>
+                                <td >{{ load.sum_y  }}</td>
+                                <td >{{ load.sum_z }}</td>
+                                <td >{{ load.sum_f }}</td>
+                                <td >{{ load.sum_g }}</td>
+                                <td >{{ load.all_sum }}</td>
+                                <td>
+                                    <div class="btn-group-vertical">
+                                        <a class="btn btn-success" role="button" aria-pressed="true" href="/report/{{ load.id }}" ><i class="far fa-book-open"></i>&nbsp;&nbsp;Отчет</a>
+                                        <a  class="btn btn-danger" role="button" aria-pressed="true" href=# ><i class="fas fa-trash-alt"></i>&nbsp;&nbsp;Удалить</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        {% endfor %}
 
-                    </tr>
                     </tbody>
                 </table>
             </div>

@@ -1,6 +1,7 @@
 body {
     background: url("../vendor/media/bgrounds/light-gray-micro-carbon.png");
 }
+
 /*Боковое меню*/
 #sidebar-wrapper {
     background: #4a0404;
@@ -98,4 +99,3 @@ body {
     border: 2px solid #580404;
     border-radius: 15px;
 }
-

@@ -67,6 +67,7 @@ class LoadTeacher(models.Model):
     y99 = models.IntegerField(default=0, null=True)
     y100 = models.IntegerField(default=0, null=True)
     y102 = models.IntegerField(default=0, null=True)
+    sum_y = models.FloatField(default=0, null=True)
     # Научная нагрузка
     z = models.IntegerField(default=0, null=True)
     z2 = models.IntegerField(default=0, null=True)
@@ -91,6 +92,7 @@ class LoadTeacher(models.Model):
     z33 = models.IntegerField(default=0, null=True)
     z36 = models.IntegerField(default=0, null=True)
     z38 = models.IntegerField(default=0, null=True)
+    sum_z = models.IntegerField(default=0, null=True)
     # Командирская подготовка
     f1 = models.IntegerField(default=0, null=True)
     f2 = models.IntegerField(default=0, null=True)
@@ -98,9 +100,13 @@ class LoadTeacher(models.Model):
     f4 = models.IntegerField(default=0, null=True)
     f5 = models.IntegerField(default=0, null=True)
     f6 = models.IntegerField(default=0, null=True)
+    sum_f = models.IntegerField(default=0, null=True)
     # Другие виды работ
     g1 = models.IntegerField(default=0, null=True)
     g2 = models.IntegerField(default=0, null=True)
+    sum_g = models.IntegerField(default=0, null=True)
+
+    all_sum = models.FloatField(default=0, null=True)
 
     date_creation = models.DateField(auto_now=True, verbose_name="Дата создания")
 
@@ -112,4 +118,5 @@ class LoadTeacher(models.Model):
 
     @staticmethod
     def available_requests(user):
+
         return LoadTeacher.objects.filter(user=user)

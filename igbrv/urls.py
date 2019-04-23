@@ -1,5 +1,5 @@
 from django.contrib.auth.decorators import login_required
-from django.urls import re_path
+from django.urls import re_path, path
 
 from igbrv.views import auth_view
 from igbrv.views.about_view import AboutView
@@ -16,7 +16,7 @@ from igbrv.views.report_view import ReportView
 urlpatterns = [
     re_path(r'^$', login_required(IndexView.as_view()), name="index"),
     re_path(r'^about$', login_required(AboutView.as_view()), name="about"),
-    re_path(r'^report$', login_required(ReportView.as_view()), name="report"),
+    path('report/<int:load_id>/', login_required(ReportView.as_view()), name="report"),
     re_path(r'^archive$', login_required(ArchiveView.as_view()), name="archive"),
     re_path(r'^calculation$', login_required(CalculationView.as_view()), name="calculation"),
 
