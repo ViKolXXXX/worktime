@@ -10,6 +10,8 @@ from igbrv.views.calculation_methodical_view import CalculationMethodicalView
 from igbrv.views.calculation_other_view import CalculationOtherView
 from igbrv.views.calculation_science_view import CalculationScienceView
 from igbrv.views.calculation_view import CalculationView
+from igbrv.views.del_load_view import DelLoadView
+from igbrv.views.get_report1_view import GetReport1View
 from igbrv.views.index_view import IndexView
 from igbrv.views.report_view import ReportView
 
@@ -17,9 +19,10 @@ urlpatterns = [
     re_path(r'^$', login_required(IndexView.as_view()), name="index"),
     re_path(r'^about$', login_required(AboutView.as_view()), name="about"),
     path('report/<int:load_id>/', login_required(ReportView.as_view()), name="report"),
+    re_path(r'^report/report1$', login_required(GetReport1View.as_view()), name="report1"),
     re_path(r'^archive$', login_required(ArchiveView.as_view()), name="archive"),
+    path('del-load/<int:load_id>/', login_required(DelLoadView.as_view()), name="del-load"),
     re_path(r'^calculation$', login_required(CalculationView.as_view()), name="calculation"),
-
     re_path(r'^calculation-academic$', login_required(CalculationAcademicView.as_view()), name="calculation-academic"),
     re_path(r'^calculation-commander$', login_required(CalculationCommanderView.as_view()), name="calculation-commander"),
     re_path(r'^calculation-methodical$', login_required(CalculationMethodicalView.as_view()), name="calculation-methodical"),

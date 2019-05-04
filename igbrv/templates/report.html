@@ -4,7 +4,7 @@
     <div class="container-fluid my-2" >
         <div class="row" style="margin-bottom: 60px">
             <div class="col-12">
-                <h6>Учебная работа (итого {{ load.x }}) <button type="button" class="btn btn-light btn-sm"><i class="far fa-file"></i>&nbsp;&nbsp;Скачать отчет</button></h6>
+                <h6>Учебная работа (итого {{ load.x }})</h6>
                 <table class="table table-bordered">
                     <thead>
                     <tr>
@@ -628,7 +628,7 @@
                 </table>
             </div>
             <div class="col-12">
-                <h6>Итого нагрузка</h6> <button type="button" class="btn btn-light btn-sm"><i class="far fa-file"></i>&nbsp;&nbsp;Скачать общий отчет</button>
+                <h6>Итого нагрузка</h6> <a href="{% url "report1" %}"><i class="far fa-file"></i>&nbsp;&nbsp;Скачать общий отчет</a>
                 <table class="table table-bordered my-2">
                     <thead>
                     <tr>
