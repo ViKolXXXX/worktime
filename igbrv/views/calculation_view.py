@@ -107,7 +107,8 @@ class CalculationView(TemplateView):
             load.z29 = int(self._check_on_none(request.POST.get('Z28'))) * 6
             load.z31 = int(self._check_on_none(request.POST.get('Z30'))) * 12
             load.z33 = int(self._check_on_none(request.POST.get('Z32'))) * 7
-            load.z36 = int(self._check_on_none(request.POST.get('Z34'))) * int(self._check_on_none(request.POST.get('Z35')))
+            load.z36 = int(self._check_on_none(request.POST.get('Z34'))) * int(
+                self._check_on_none(request.POST.get('Z35')))
             load.z38 = int(self._check_on_none(request.POST.get('Z37'))) * 25
             load.sum_z = sum(
                 [load.z, load.z2, load.z4, load.z6, load.z8, load.z10, load.z12, load.z13, load.z14, load.z15, load.z16,
@@ -137,7 +138,10 @@ class CalculationView(TemplateView):
             return render(request, "index.html")
 
     def _check_on_none(self, enter_number):
-        if enter_number is None:
-            return 0
-        else:
-            return enter_number
+        try:
+            if enter_number is None:
+                return 0
+            else:
+                return enter_number
+        except:
+            return render(request, "index.html")

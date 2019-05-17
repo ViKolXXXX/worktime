@@ -1,4 +1,9 @@
 Django==2.1.7
+docxtpl==0.5.17
+Jinja2==2.10.1
+lxml==4.3.3
+MarkupSafe==1.1.1
 psycopg2==2.7.7
-psycopg2-binary==2.7.7
-pytz==2018.9
+python-docx==0.8.7
+pytz==2019.1
+six==1.12.0

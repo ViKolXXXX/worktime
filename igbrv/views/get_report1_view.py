@@ -12,7 +12,7 @@ from docxtpl import DocxTemplate
 
 class GetReport1View(TemplateView):
     def get(self, request, *args, **kwargs):
-        # try:
+        try:
             load = LoadTeacher.objects.get(id=self.kwargs['load_id'])
             path2template = os.path.join("igbrv", "docx_templates", "report1.docx")
             doc = DocxTemplate(path2template)
@@ -83,5 +83,5 @@ class GetReport1View(TemplateView):
             doc.save(response)
 
             return response
-        # except:
-        #     return render(request, "index.html")
+        except:
+            return render(request, "index.html")
