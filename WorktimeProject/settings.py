@@ -7,7 +7,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = 'g1qw$nz(c2@e3!x9h%=@i2u*^9d-k(3)5fom0kmy2d$w9nd)*q'
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -58,9 +58,9 @@ WSGI_APPLICATION = 'WorktimeProject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'worktimeDb',
+        'NAME': 'worktimedb',
         'USER': 'postgres',
-        'PASSWORD': 'Ghjcnjq6875',
+        'PASSWORD': '12345678',
         'HOST': 'localhost',
         'PORT': '5432',
     }

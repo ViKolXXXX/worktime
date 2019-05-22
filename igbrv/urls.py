@@ -4,11 +4,6 @@ from django.urls import re_path, path
 from igbrv.views import auth_view
 from igbrv.views.about_view import AboutView
 from igbrv.views.archive_view import ArchiveView
-from igbrv.views.calculation_academic_view import CalculationAcademicView
-from igbrv.views.calculation_commander_view import CalculationCommanderView
-from igbrv.views.calculation_methodical_view import CalculationMethodicalView
-from igbrv.views.calculation_other_view import CalculationOtherView
-from igbrv.views.calculation_science_view import CalculationScienceView
 from igbrv.views.calculation_view import CalculationView
 from igbrv.views.del_load_view import DelLoadView
 from igbrv.views.get_report1_view import GetReport1View
