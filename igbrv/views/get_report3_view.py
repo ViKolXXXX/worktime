@@ -23,7 +23,7 @@ class GetReport3View(TemplateView):
                        'f5': load.f5,
                        'f6': load.f6,                      
 
-                       'sum_f': load.sum_z
+                       'sum_f': load.sum_f
                        }
             response = HttpResponse(
                 content_type='application/vnd.openxmlformats-officedocument.wordprocessingml.document')

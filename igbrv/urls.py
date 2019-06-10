@@ -13,6 +13,7 @@ from igbrv.views.get_report4_view import GetReport4View
 from igbrv.views.get_report5_view import GetReport5View
 from igbrv.views.index_view import IndexView
 from igbrv.views.report_view import ReportView
+from igbrv.views.get_prikaz_view import GetPrikazView
 
 urlpatterns = [
     re_path(r'^$', login_required(IndexView.as_view()), name="index"),
@@ -26,6 +27,7 @@ urlpatterns = [
     re_path(r'^archive$', login_required(ArchiveView.as_view()), name="archive"),
     path('del-load/<int:load_id>/', login_required(DelLoadView.as_view()), name="del-load"),
     re_path(r'^calculation$', login_required(CalculationView.as_view()), name="calculation"),
+    re_path(r'^get_prikaz', login_required(GetPrikazView.as_view()), name="get_prikaz"),
     
     # Регистрация
     re_path(r'^register/', auth_view.RegisterFormView.as_view(), name="register"),
